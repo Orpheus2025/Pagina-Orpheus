@@ -175,22 +175,18 @@ h1, h2, h3, h4, h5,
 }
 
 .close-chat:hover {
-  background: rgb(141, 140, 140);
+  background: rgb(168, 160, 160);
 }
 /*----------------------- Estilos para Logos mision y vision------------ */
 .content-box {
-  padding-right: 7rem; /* Agrega un margen derecho para separar de la imagen */
+  max-width: 100%;
+   padding-left: 15px; /*Distancia entre el texto del lado izquierdo y la imagen */
+  padding-right: 15px;
 }
 
-.text-container {
-  margin-left: 15px; /* Espacio entre el icono y el texto */
-}
 
-.icon {
-  display: block;
-  width: 60px; /* Ajusta el tamaño del icono */
-  margin: 0 auto 10px auto; /* Centra el icono y añade espacio debajo */
-}
+
+
 
 .title {
   font-size: 1.2rem;
@@ -205,10 +201,6 @@ h1, h2, h3, h4, h5,
   color: #333;
 }
 
-.divider {
-  border-top: 1px solid #ddd; /* Línea gris para separar */
-  margin: 1rem 0;
-}
 
 /* ------------------------------------ */
 
