@@ -194,13 +194,27 @@ h1, h2, h3, h4, h5,
   margin-bottom: 5px;
 }
 
-/* Ajuste del texto */
+
+/* Estilos generales para los textos de Misión y Visión */
+
 .text {
   text-align: justify; /* Justifica el texto */
   color: #333;
-  max-width: 60%; /* Controla el ancho para una mejor lectura */
-  margin: 0 auto; /* Coloca el texto centrado justificado */
-  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos específicos para pantallas de escritorio */
+@media (min-width: 992px) {
+  .text {
+    max-width: 60%; /* Limita el ancho para una mejor lectura */
+  }
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 991px) {
+  .text {
+    max-width: 90%; /* Ocupa todo el ancho en dispositivos móviles */
+  }
 }
 
 
