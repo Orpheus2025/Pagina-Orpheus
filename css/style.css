@@ -1,12 +1,87 @@
-/* -----------------------NUEVOS ESTILOS-------------- */
-/* ESTILO PARA NUESTROS CLIENTES */
-.clientes-img {
-  width: 70%;  /* La imagen ocupa todo el ancho de la sección */
-  height: auto; /* Mantiene la proporción */
-  max-height: 600px; /* Evita que sea demasiado grande en pantallas grandes */
-  object-fit: cover; /* Asegura que la imagen cubra bien sin deformarse */
-}
+/* Base */
+body {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem; }
 
+::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+::selection {
+  background: #000;
+  color: #fff; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a:hover {
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+.border-2 {
+  border-width: 2px; }
+
+.text-black {
+  color: #000 !important; }
+
+.bg-black {
+  background: #000 !important; }
+
+.color-black-opacity-5 {
+  color: rgba(0, 0, 0, 0.5); }
+
+.color-white-opacity-5 {
+  color: rgba(255, 255, 255, 0.5); }
+
+.site-wrap:before {
+  display: none;
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  background: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden; }
+
+.offcanvas-menu .site-wrap {
+  height: 100%;
+  width: 100%;
+  z-index: 2; }
+  .offcanvas-menu .site-wrap:before {
+    opacity: 1;
+    visibility: visible; }
+
+.btn {
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px; }
+  .btn:hover, .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.btn-primary {
+    background: #1f346d;
+    border-color: #3a4971;
+    color: #fff; }
+    .btn.btn-primary:hover {
+      background: #232349;
+      border-color: #1e1e49;
+      color: #fff; }
+    .btn.btn-primary.btn-black--hover:hover {
+      background: #dfd8d8;
+      color: #fff; }
 /* BOTON DE WHATSAPP OFICIAL      */
 .whatsapp-button {
   width: 60px;
@@ -136,95 +211,11 @@
 }
 
 /* ------------------------------------ */
-/* ------------------------------------ */
-/* Base */
-body {
-  line-height: 1.7;
-  color: gray;
-  font-weight: 400;
-  font-size: 1rem; }
 
-::-moz-selection {
-  background: #000;
-  color: #fff; }
 
-::selection {
-  background: #000;
-  color: #fff; }
 
-a {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease; }
-  a:hover {
-    text-decoration: none; }
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-
-.border-2 {
-  border-width: 2px; }
-
-.text-black {
-  color: #000 !important; }
-
-.bg-black {
-  background: #000 !important; }
-
-.color-black-opacity-5 {
-  color: rgba(0, 0, 0, 0.5); }
-
-.color-white-opacity-5 {
-  color: rgba(255, 255, 255, 0.5); }
-
-.site-wrap:before {
-  display: none;
-  -webkit-transition: .3s all ease-in-out;
-  -o-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
-  background: rgba(0, 0, 0, 0.6);
-  content: "";
-  position: absolute;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  visibility: hidden; }
-
-.offcanvas-menu .site-wrap {
-  height: 100%;
-  width: 100%;
-  z-index: 2; }
-  .offcanvas-menu .site-wrap:before {
-    opacity: 1;
-    visibility: visible; }
-
-.btn {
-  font-size: 16px;
-  border-radius: 30px;
-  padding: 10px 30px; }
-  .btn:hover, .btn:active, .btn:focus {
-    outline: none;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
-  .btn.btn-primary {
-    background: #3a4971;
-    border-color: #3a4971;
-    color: #fff; }
-    .btn.btn-primary:hover {
-      background: #000;
-      border-color: #000;
-      color: #fff; }
-    .btn.btn-primary.btn-black--hover:hover {
-      background: #666666;
-      color: #fff; }
-
-.line-height-1 {
-  line-height: 1 !important; }
-
+/* -------------------------------------------------   */
 .bg-black {
   background: #000; }
 
@@ -237,28 +228,30 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
 
-.site-section {
-  padding: 2.5em 0; }
-  @media (min-width: 768px) {
     .site-section {
-      padding: 5em 0; } }
-  .site-section.site-section-sm {
-    padding: 4em 0; }
-
-.site-section-heading {
-  padding-bottom: 20px;
-  margin-bottom: 0px;
-  position: relative;
-  font-size: 2.5rem; }
-  @media (min-width: 768px) {
+      padding: 2em 0;
+      
+    }
+      @media (min-width: 768px) {
+        .site-section {
+          padding: 2.5em 0; } }
+      .site-section.site-section-sm {
+        padding: 2em 0; }
+    
     .site-section-heading {
-      font-size: 3rem; } }
+      padding-bottom: 16px;
+      margin-bottom: 0px;
+      position: relative;
+      font-size: 2.5rem; }
+      @media (min-width: 768px) {
+        .site-section-heading {
+          font-size: 3rem; } }
 
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  padding: 2em 0;
+  padding: 1.5em 0;
   background: #333333; }  
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
@@ -408,6 +401,8 @@ h1, h2, h3, h4, h5,
   position: absolute;
   top: 0;
   width: 100%;
+  min-height: 10px;
+ 
   border-bottom: rgba(255, 255, 255, 0.7); }
   .site-navbar .site-logo {
     position: relative;
@@ -524,13 +519,14 @@ h1, h2, h3, h4, h5,
           visibility: visible;
           opacity: 1; }
 
+/* ----ESTILOS DEL MENU HAMBURGUESA PARA LA PARTE MOVIL----- */
 .site-mobile-menu {
-  width: 300px;
+   width: 200px; /*Ancho del menu hamburguesa */
   position: fixed;
   right: 0;
   z-index: 2000;
-  padding-top: 20px;
-  background: #fff;
+  padding-top: 5px;
+  background: #f3efef;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -547,11 +543,11 @@ h1, h2, h3, h4, h5,
   .site-mobile-menu .site-mobile-menu-header {
     width: 100%;
     float: left;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 10px; }
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
       float: right;
-      margin-top: 8px; }
+      margin-top: 1px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
         font-size: 30px;
         display: inline-block;
@@ -566,8 +562,8 @@ h1, h2, h3, h4, h5,
           color: #25262a; }
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
       float: left;
-      margin-top: 10px;
-      margin-left: 0px; }
+      margin-top: 5px;
+      margin-left: 5px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
         display: inline-block;
         text-transform: uppercase; }
@@ -579,16 +575,16 @@ h1, h2, h3, h4, h5,
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     position: relative;
-    padding: 0 20px 20px 20px;
+    padding: 0 10px 10px 10px;
     height: calc(100vh - 52px);
-    padding-bottom: 150px; }
+    padding-bottom: 80px; }
   .site-mobile-menu .site-nav-wrap {
     padding: 0;
     margin: 0;
     list-style: none;
     position: relative; }
     .site-mobile-menu .site-nav-wrap a {
-      padding: 10px 20px;
+      padding: 10px 10px;
       display: block;
       position: relative;
       color: #212529; }
@@ -602,13 +598,13 @@ h1, h2, h3, h4, h5,
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
-      top: 10px;
+      top: 5px;
       z-index: 20;
       width: 36px;
       height: 36px;
       text-align: center;
       cursor: pointer;
-      border-radius: 50%; }
+      border-radius: 60%; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
         background: #f8f9fa; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
@@ -1826,7 +1822,7 @@ h1, h2, h3, h4, h5,
     margin: 10px; }
 
 .text-special {
-  color: #bbcdde !important; }
+  color: #7c8791 !important; }
 
 .bg-special {
   background: #bbcdde !important; }

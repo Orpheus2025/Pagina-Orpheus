@@ -24,13 +24,13 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="icon" type="image/vnd.microsoft.icon" href="images/prueba1.jpg">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/Five_Icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -43,9 +43,9 @@
       </div>
     </div>
 
-       
+   
     <!-- -------------------------------------HEADER------------------------------------------- -->
-    <header class="site-navbar  js-sticky-header site-navbar-target" role="banner">
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
       <div class="container">
         <div class="row align-items-center">
           <!-- <div class="col-6 col-xl-2" style="height: 60px;">
@@ -66,14 +66,17 @@
             </nav>
           </div>
 
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
-              class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
+              class="site-menu-toggle js-menu-toggle text-black float-right" onclick="OnePageNavigation();"
+              ><span class="icon-menu h3"
+              ></span></a>
           </div>
 
         </div>
       </div>
     </header>
     <!-- ------------------------------------------------------------------------------ -->
+
     <!----------------------------------APOYANDO A LA GESTIÓN EMPRESARIAL ------------------------------->
     <div class="site-blocks-cover overlay" style="background-image: url(images/dashboard2.jpg);" data-aos="fade"
       id="home-section">
@@ -86,152 +89,186 @@
         </div>
       </div>
     </div>
-    <!-- ---------------------------INCIO DE SECCIONES------------------------>
-
-    <div class="site-section bg-light" id="training-section">
+    <!-- --------------------------------------------------------------->
+    <div class="site-section bg-light" id="nuestra-empresa">
       <div class="container">
-          <!-- ---------------------------------NUESTRA EMPRESA------------------------------------- -->
+         <!-- ---------------------------------NUESTRA EMPRESA------------------------------------- -->
         <div class="row">
           <div class="col-12 text-center">
             <h2 class="section-title">NUESTRA EMPRESA</h2>
           </div>
         </div>
-        <section class="site-section" id="nuestra-empresa">
+        <section class="site-section">
           <div class="container">
-
             <div class="row">
-              <div class="col-lg-6">
-                <img src="images/Home.jpg" alt="Image" class="img-fluid">
-                <p style="margin-top: 0.5rem; text-align: justify;">
-                  Somos una empresa ecuatoriana especializada en el desarrollo de Software de Seguridad y Salud Ocupacional . Funcionamos en más de 100 empresas en Ecuador y México. Investigamos, evolucionamos e innovamos constantemente para ofrecer soluciones potentes que rentabilicen la inversión de sus empresas.
-                </p>
-              </div>
-              <!-- Misión y Visión -->
-              <div class="col-lg-6 d-flex flex-column justify-content-center content-box">
-                <!-- Misión -->
-                <div class="d-flex align-items-center mb-4">
-                    <div class="text-center">
-                        <h3 class="title">Misión</h3>
-                        <img src="images/mision1.png" alt="Misión" class="icon">
-                    </div>
-                    <div class="text-container">
-                        <p class="text">Apoyar a las empresas con conocimiento y automatizar su gestión para aumentar su productividad en los ejes de alcance de nuestros servicios.</p>
-                    </div>
+                <div class="col-lg-6">
+                  <img src="images/Home.jpg" alt="Image" class="img-fluid">
+                  <p style="margin-top: 0.5rem; text-align: justify;">
+                    Somos una empresa ecuatoriana especializada en el desarrollo de Software de Seguridad y Salud Ocupacional . Funcionamos en más de 100 empresas en Ecuador y México. Investigamos, evolucionamos e innovamos constantemente para ofrecer soluciones potentes que rentabilicen la inversión de sus empresas.
+                  </p>
                 </div>
 
-                <hr class="divider"> <!-- Línea separadora -->
+                <!-- Misión y Visión -->
+                <!-- CAMBIOS MARCELO: Se agrego un padding p-1 para impedir que el contenedor se contraiga innecesariamente-->
+                <div class="col-lg-6 d-flex flex-column justify-content-center content-box p-1">
+                  <!-- Misión -->
+                  <div class="d-flex align-items-center mb-4">
+                      <div class="text-center">
+                          <h3 class="title">Misión</h3>
+                          <img src="images/mision1.png" alt="Misión" class="icon">
+                      </div>
+                      <div class="text-container">
+                          <p class="text">Apoyar a las empresas con conocimiento y automatizar su gestión para aumentar su productividad en los ejes de alcance de nuestros servicios.</p>
+                      </div>
+                  </div>
 
-                <!-- Visión -->
-                <div class="d-flex align-items-center">
-                    <div class="text-center">
-                        <h3 class="title">Visión</h3>
-                        <img src="images/vision1.png" alt="Visión" class="icon">
-                    </div>
-                    <div class="text-container">
-                        <p class="text">Ser líderes en procesos de consultoría automatizada, convirtiéndonos en un aliado estratégico de las empresas.</p>
-                    </div>
+                  <hr class="divider"> <!-- Línea separadora -->
+
+                  <!-- Visión -->
+                  <div class="d-flex align-items-center">
+                      <div class="text-center">
+                          <h3 class="title">Visión</h3>
+                          <img src="images/vision1.png" alt="Visión" class="icon">
+                      </div>
+                      <div class="text-container">
+                          <p class="text">Ser líderes en procesos de consultoría automatizada, convirtiéndonos en un aliado estratégico de las empresas.</p>
+                      </div>
+                  </div>
                 </div>
-              </div>
-            
+              
+                <!-- <div style="flex: 1; padding-left: 30px; margin-top: 1rem;">
+                
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div style="text-align: justify">
+                        <h3 style="color: #246d27; font-weight: bold; text-align: center; margin-bottom: 2rem;">Misión</h3>
+                      
+                          <img src="images/mision.png" alt="" style="width: 110px;">
+                       
+                        <p class="text-special">
+                          Innovar la prevención en las empresas dotando de tecnología al equipo de seguridad y salud ocupacional, volviéndolo más competitivo y haciendo que sus empresas sean más rentables.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div style="text-align: justify;">
+                        <h3 style="color: #246d27; font-weight: bold; text-align: center; margin-bottom: 2rem">Visión</h3>
+                          <img src="images/vision.png" alt="">
+                        <p class="text-special">
+                          Posicionarnos como el primer proveedor de software de seguridad y salud ocupacional de empresas en Ecuador y entre los cinco primeros en Latinoamérica, destacándonos por la calidad y versatilidad de nuestros productos y la calidez de nuestros servicios.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                -->
+            </div>
+            <div>
+
             </div>
           </div>
         </section>
-
-        <!---------------------------------NUESTROS VALORES CORPORATIVOS --------------------------------->
+        <!--------------------------------------------------------------------------------------------- -->
+        <!---------------------------------NUESTROS VALORES CORPORATIVOS ------------------------------------------------>
         <div class="row">
-              <div class="col-12 text-center">
-                <h2 class="section-title mb-3">NUESTROS VALORES CORPORATIVOS</h2>
-              </div>
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">NUESTROS VALORES CORPORATIVOS</h2>
+          </div>
         </div>
         <section class="site-section">
           <div class="container">
             <div class="row">
-           
-                  <!-- Calidad -->
-                 <div class="col-md-6 col-lg-4 d-flex">
-                   <div class="mr-3"> <img src="images/Valores Corporativos/Calidad.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
-                  
-                   <div style="text-align: justify; color: #18420b;">
-                     <h3 >Calidad</h3>
-                     <p class="text-black" >Cuidamos hasta el más
-                       mínimo detalle en nuestras
-                       soluciones.</p>
-                   </div>
-                 </div>
-               <!-- ------------------------------------------------------------------------- -->
-        
-                 <!-- Seriedad-->
-                 <div class="col-md-6 col-lg-4 d-flex">
-                   <div class="mr-3"> <img src="images/Valores Corporativos/seriedad.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
-                   <div style="text-align: justify; color: #18420b;">
-                     <h3>Seriedad</h3>
-                     <p class="text-black">Puntualidad y honestidad en cada
-                       compromiso adquirido con nuestros
-                       clientes.</p>
-                   
-                   </div>
-                 </div>
-        
-                 <!-- Experiencia-->
-                 <div class="col-md-6 col-lg-4 d-flex">
-                   <div class="mr-3"> <img src="images/Valores Corporativos/experiencia.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
-                  
-                   <div style="color: #18420b; text-align: justify;">
-                     <h3>Experiencia</h3>
-                     <p class="text-black">Puntualidad y honestidad en cada
-                       compromiso adquirido con nuestros
-                       clientes.</p>
-                   
-                   </div>
-                 </div>
-                 <!-- Pasion-->
-                 <div class="col-md-6 col-lg-4 d-flex" style="margin-top: 40px;">
-                   <div class="mr-3"> <img src="images/Valores Corporativos/pasion.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
-                  
-                   <div style="color: #18420b; text-align: justify;">
-                     <h3 >Pasión</h3>
-                     <p class="text-black">Cuidamos hasta el más <br> 
-                       mínimo detalle en nuestras.</p>
-                   
-                   </div>
-                 </div>
-                 <!-- Seguridad-->
-                 <div class="col-md-6 col-lg-4 d-flex" style="margin-top: 40px;">
-                   <div class="mr-3"> <img src="images/Valores Corporativos/seguridad.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
-                  
-                   <div style="color: #18420b; text-align: justify;">
-                     <h3>Seguridad</h3>
-                     <p class="text-black">Cuidamos hasta el más <br> 
-                       mínimo detalle en nuestras.</p>
-                   
-                   </div>
-                 </div> 
-                 <!-- Respaldo-->
-                 <div class="col-md-6 col-lg-4 d-flex"  style="margin-top: 40px;">
-                   <div class="mr-3"> <img src="images/Valores Corporativos/respaldo.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
-                  
-                   <div style="color: #18420b; text-align: justify;">
-                     <h3 style="color: #18420b;">Respaldo</h3>
-                     <p class="text-black">Cuidamos hasta el más <br> 
-                       mínimo detalle en nuestras.</p>
-                   
-                   </div>
-                 </div>   
+       
+              <!-- Calidad -->
+             <div class="col-md-6 col-lg-4 d-flex">
+               <div class="mr-3"> <img src="images/Valores Corporativos/Calidad.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
+              
+               <div style="text-align: justify; color: #18420b;">
+                 <h3 >Calidad</h3>
+                 <p class="text-black" >Cuidamos hasta el más
+                   mínimo detalle en nuestras
+                   soluciones.</p>
                </div>
-                
-          </div>
+             </div>
+           <!-- ------------------------------------------------------------------------- -->
     
+             <!-- Seriedad-->
+             <div class="col-md-6 col-lg-4 d-flex">
+               <div class="mr-3"> <img src="images/Valores Corporativos/seriedad.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
+               <div style="text-align: justify; color: #18420b;">
+                 <h3>Seriedad</h3>
+                 <p class="text-black">Puntualidad y honestidad en cada
+                   compromiso adquirido con nuestros
+                   clientes.</p>
+               
+               </div>
+             </div>
+    
+             <!-- Experiencia-->
+             <div class="col-md-6 col-lg-4 d-flex">
+               <div class="mr-3"> <img src="images/Valores Corporativos/experiencia.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
+              
+               <div style="color: #18420b; text-align: justify;">
+                 <h3>Experiencia</h3>
+                 <p class="text-black">Puntualidad y honestidad en cada
+                   compromiso adquirido con nuestros
+                   clientes.</p>
+               
+               </div>
+             </div>
+             <!-- Pasion-->
+             <div class="col-md-6 col-lg-4 d-flex" style="margin-top: 40px;">
+               <div class="mr-3"> <img src="images/Valores Corporativos/pasion.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
+              
+               <div style="color: #18420b; text-align: justify;">
+                 <h3 >Pasión</h3>
+                 <p class="text-black">Cuidamos hasta el más <br> 
+                   mínimo detalle en nuestras.</p>
+               
+               </div>
+             </div>
+             
+             
+             <!-- Seguridad-->
+             <div class="col-md-6 col-lg-4 d-flex" style="margin-top: 40px;">
+               <div class="mr-3"> <img src="images/Valores Corporativos/seguridad.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
+              
+               <div style="color: #18420b; text-align: justify;">
+                 <h3>Seguridad</h3>
+                 <p class="text-black">Cuidamos hasta el más <br> 
+                   mínimo detalle en nuestras.</p>
+               
+               </div>
+             </div> 
+             
+             
+             <!-- Respaldo-->
+             <div class="col-md-6 col-lg-4 d-flex"  style="margin-top: 40px;">
+               <div class="mr-3"> <img src="images/Valores Corporativos/respaldo.png" alt="Imagen Calidad" class="mr-3" style="width: 100px; height: 100px;"></span></div>
+              
+               <div style="color: #18420b; text-align: justify;">
+                 <h3 style="color: #18420b;">Respaldo</h3>
+                 <p class="text-black">Cuidamos hasta el más <br> 
+                   mínimo detalle en nuestras.</p>
+               
+               </div>
+             </div>   
+           </div>
+            
+          </div>
+
         </section>
-        <!-- --------------------------------------------------------------------------------------------->
-      </div> 
-    </div>     
-    <!-- ---------------------------------BENEFICIOS------------------------------------- -->
-    <div class="site-section" style="background-color: #075e1d;">
+        <!-- ------------------------------------------->
+      </div>
+    </div>      
+        <!-- ---------------------------------BENEFICIOS------------------------------------- -->
+        <div class="site-section " style="background-color: #075e1d;">
           <div style="margin-bottom: 2rem;" class="container">
             <div class="row">
-              <div class="col-12 text-center">
+              <div class="col-12 text-center" style="margin-bottom: 2rem;">
                 <h2 class="section-title mb-3" style="color: white;">BENEFICIOS</h2>
               </div>
+
               <div class="col-md-6 col-lg-4 d-flex">
                 <div class="mr-3" style="color: beige;"><span class="flaticon-bill display-3"></span></div>
                 <div>
@@ -239,6 +276,7 @@
                   <p style="color: #dde4df;">Te ayudamos a optimizar los tiempos en tu gesti&oacute;n.</p>
                 </div>
               </div>
+
               <div class="col-md-6 col-lg-4 d-flex">
                 <div class="mr-3" style="color: white;"><span class="flaticon-customer-service display-3"></span></div>
                 <div>
@@ -257,115 +295,223 @@
               </div>
             </div>
           </div>
-          <center>  <p><a href="#contact-section" class="btn btn-primary mr-2 mb-2">Cont&aacute;ctanos</a></p> </center>
-    </div>
-     <!-- --------------------------------------------------------------------------------------- -->
-    
-    <!-- ---------------------------------------------------------------------------------------------->
-    <div class="site-section bg-light" id="training-section">
-      <div class="container">  
-        <!-- -------------------------------------SEGURIDAD Y SALUD OCUPACIONAL------------------------------ -->
-         <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">SEGURIDAD Y SALUD OCUPACIONAL</h2>
+          <!--------------------------------------------------------------------------------------------- -->
+          <div class="d-flex justify-content-center align-items-center">
+            <p><a href="#contact-section" class="btn btn-primary mb-2">Cont&aacute;ctanos</a></p>
           </div>
-         </div>
-        <section class="site-section">
-          <div class="container">
-
-            <div class="row">
-              <div class="col-lg-6" stylr="position: relative;">
-
-                <div class="owl-carousel slide-one-item-alt">
-                  <img src="images/med_ocu.jpg" alt="Image" class="img-fluid">
-                  <img src="images/tecnic.jpg" alt="Image" class="img-fluid">
-                  <img src="images/plan.jpg" alt="Image" class="img-fluid">
-                </div>
-                <div class="custom-direction">
-                  <a href="#" class="custom-prev ">
-                    <span class="icon-navigate_before"></span>
-                  </a>
-                  /
-                  <a href="#" class="custom-next">
-                    <span class="icon-navigate_next"></span>
-                  </a>
-                </div>
-
-              </div>
-              <div class="col-lg-5 ml-auto">
-
-                <div class="owl-carousel slide-one-item-alt-text">
-                  <div>
-                    <h2 class="section-title mb-3">SALUD OCUPACIONAL</h2>
-                    <p class="lead">
-                      <ul>
-                        <li>Exámenes Ocupacionales</li>
-                        <li>Programas Preventivos de Salud</li>
-                        <li>Indicadores de Morbilidad </li>
-                        <li>Indicadores SUT</li>
-                      </ul>
-                    </p>
-
-                    <p style="margin-top: 5rem;"><a href="#contact-section" class="btn btn-primary mr-2 mb-8">Cont&aacute;ctanos</a></p>
-                  </div>
-                  <div>
-                    <h2 class="section-title mb-3">SEGURIDAD INDUSTRIAL</h2>
-                    <p class="lead">
-                      <ul>
-                        <li>Elaboración de Reglamento de Higiene y Seguridad Industrial</li>
-                        <li>Planes de Emergencia</li>
-                        <li>Procedimientos Operativos</li>
-                        <li>Programas de Prevención de Riesgos</li>
-                        <li>Indicadores SUT e IESS</li>
-                        <li>Mediciones</li>
-                        <li>Capacitaciones</li>
-                        <li>Cumplimiento L</li>
-                      </ul>
-                    </p>
-
-                    <p style="margin-top: 5rem;"><a href="#contact-section" class="btn btn-primary mr-2 mb-8">Cont&aacute;ctanos</a></p>
-                  </div>
-                  <div>
-                    <h2 class="section-title mb-3">SOFTWARE SSO</h2>
-                    <p class="lead">
-                      <ul>
-                        <li>Innovación y Control de la gestión SSO en un solo Software </li>
-                        <li>Optimización de tiempos administrativos en línea</li>
-                        <li>Informes gerenciales consolidados en línea</li>
-                        <li>Control Integral en cada centro de trabajo</li>
-                        <li>Innovación y Control en un solo Software</li>
-                        <li>Indicadores de Cumplimiento Legal</li>                     
-                      </ul>
-                    </p>
-
-                    <p style="margin-top: 5rem;"><a href="#contact-section" class="btn btn-primary mr-2 mb-8">Cont&aacute;ctanos</a></p>
-                  </div>
-
-                </div>
-
-              </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------ -->
+    <div class="site-section bg-light" id="training-section">
+      <div class="container">
+        <!-- -------------------------------------SEGURIDAD Y SALUD OCUPACIONAL------------------------------ -->
+          <div class="row">
+            <div class="col-12 text-center" style="margin-bottom: 0.2rem;">
+              <h2 class="section-title mb-3">SEGURIDAD Y SALUD OCUPACIONAL</h2>
             </div>
           </div>
-        </section>
-       <!----------------------------------------------------------------------------------------------------->
-        <!------------------------------------------------NUESTROS CLIENTES------------------------------------>
-        <div class="row">
-          <div class="col-12 text-center">
-              <h2 class="section-title mb-3">NUESTROS CLIENTES</h2>
-          </div>
-      </div>
-      
-      <section class="site-section">
-          <div class="container-fluid"> <!-- Se usa container-fluid para ocupar todo el ancho -->
+          <section class="site-section">
+            <div class="container">
+
               <div class="row">
-                  <div class="col-12">
-                      <img src="images/Nuestros_Clientes.png" alt="Nuestros Clientes" class="clientes-img">
+                <div class="col-lg-6" stylr="position: relative;">
+
+                  <div class="owl-carousel slide-one-item-alt">
+                    <img src="images/med_ocu.jpg" alt="Image" class="img-fluid">
+                    <img src="images/tecnic.jpg" alt="Image" class="img-fluid">
+                    <img src="images/plan.jpg" alt="Image" class="img-fluid">
                   </div>
+                  <div class="custom-direction">
+                    <a href="#" class="custom-prev ">
+                      <span class="icon-navigate_before"></span>
+                    </a>
+                    /
+                    <a href="#" class="custom-next">
+                      <span class="icon-navigate_next"></span>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="col-lg-5 ml-auto">
+
+                  <div class="owl-carousel slide-one-item-alt-text">
+                    <div>
+                      <h2 class="section-title mb-3">SALUD OCUPACIONAL</h2>
+                      <p class="lead">
+                        <ul>
+                          <li>Exámenes Ocupacionales</li>
+                          <li>Programas Preventivos de Salud</li>
+                          <li>Indicadores de Morbilidad </li>
+                          <li>Indicadores SUT</li>
+                        </ul>
+                      </p> 
+                      
+                      <p style="margin-top: 5rem;"><a href="#contact-section" class="btn btn-primary mr-2 mb-8">Cont&aacute;ctanos</a></p>
+                    </div>
+                    <div>
+                      <h2 class="section-title mb-3">SEGURIDAD INDUSTRIAL</h2>
+                      <p class="lead">
+                        <ul>
+                          <li>Elaboración de Reglamento de Higiene y Seguridad Industrial</li>
+                          <li>Planes de Emergencia</li>
+                          <li>Procedimientos Operativos</li>
+                          <li>Programas de Prevención de Riesgos</li>
+                          <li>Indicadores SUT e IESS</li>
+                          <li>Mediciones</li>
+                          <li>Capacitaciones</li>
+                          <li>Cumplimiento L</li>
+                        </ul>
+                      </p>
+
+                      <p><a href="#contact-section" class="btn btn-primary mr-2 mb-2">Cont&aacute;ctanos</a></p>
+                    </div>
+
+                    <div>
+                      <h2 class="section-title mb-3">SOFTWARE SSO</h2> 
+                      <p class="lead">
+                        <ul>
+                          <li>Innovación y Control de la gestión SSO en un solo Software </li>
+                          <li>Optimización de tiempos administrativos en línea</li>
+                          <li>Informes gerenciales consolidados en línea</li>
+                          <li>Control Integral en cada centro de trabajo</li>
+                          <li>Innovación y Control en un solo Software</li>
+                          <li>Indicadores de Cumplimiento Legal</li>                     
+                        </ul>
+                      </p>
+
+                      <p><a href="#contact-section" class="btn btn-primary mr-2 mb-2">Cont&aacute;ctanos</a></p>
+                    </div>
+
+                    
+                    
+
+
+                    <div>
+                      <h2 class="section-title mb-3">SOFTWARE SSO</h2> 
+                      <p class="lead">
+                        <ul>
+                          <li>Innovación y Control de la gestión SSO en un solo Software </li>
+                          <li>Optimización de tiempos administrativos en línea</li>
+                          <li>Informes gerenciales consolidados en línea</li>
+                          <li>Control Integral en cada centro de trabajo</li>
+                          <li>Innovación y Control en un solo Software</li>
+                          <li>Indicadores de Cumplimiento Legal</li>                     
+                        </ul>
+                      </p>
+
+                      <p><a href="#contact-section" class="btn btn-primary mr-2 mb-2">Cont&aacute;ctanos</a></p>
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
+            </div>
+          </section>
+   <!----------------------------------------------------------------------------------------------------->
+    <!-- -------------------------------------NUESTROS CLIENTES-------------------------------------------->
+          <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="section-title ">NUESTROS CLIENTES</h2>
+            </div>
           </div>
-      </section>
-         <!----------------------------------------------BOTON DE WHATSAPP-------------------------------------->
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 3rem;" >
+
+          <!--CAMBIOS MARCELO: Cambio en el diseño responsivo de la imagen-->
+          <section class="site-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <img src="images/Nuestros_Clientes.png" alt="Nuestros Clientes" class="img-fluid clientes-img">
+                    </div>
+                </div>
+            </div>
+          </section>
+        
+
+    <!--------------------------------------------------------------------------------------------- -->
+  
+   <!-------------------------------------------CONTÁCTANOS----------------------->
+   <section class="site-section bg-light" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="section-title">CONTACTANOS</h2> <!-- Se redujo el margen inferior -->
+        </div>
+      </div>
+    
+    
+        <div class="row">
+            <div class="mt-3 col-md-6 ">
+                <img style="margin-top: 1rem;" width="100%" height="auto" src="./images/contactanos.jpg" alt=""/>
+            </div>
+            <div class="col-md-6 mb-5">
+                <form action="#" class="p-5 bg-white">
+                    <p class="section-title" style="font-size: 23pt;text-align: center; margin-top: -4rem; line-height: 1em;"><br> DESEO QUE ME CONTACTE UN ASESOR</p>
+                    <div class="row form-group">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Nombre:</label>
+                            <input type="text" id="fname" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text-black" for="lname">Tel&eacute;fono:</label>
+                            <input type="text" id="telefono" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+
+                        <div class="col-md-12">
+                            <label class="text-black" for="email">Email</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+
+                        <div class="col-md-12">
+                            <label class="text-black" for="subject">Asunto:</label>
+                            <input type="subject" id="subject" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="message">Mensaje:</label>
+                            <textarea name="message" id="message" cols="30" rows="3" class="form-control"
+                                placeholder="Escribe acerca del servicio que necesitas..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                            <input id="sendMail" value="Enviar Mensaje"
+                                class="btn btn-primary btn-md text-white">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="row" >
+            <div class="col-md-6">
+                <p class="mb-0 font-weight-bold">Direcci&oacute;n:</p>
+                <p class="mb-4">Av. Occidental oe4-90 y La Sirena Piso 2, Sector El Condado
+            </div>
+            <div class="col-md-3">
+                <p class="mb-0 font-weight-bold">Tel&eacute;fono:</p>
+                <p class="mb-4"><a href="#">(+593) 98 755 42 76</a></p>
+            </div>
+            <div class="col-md-3">
+                <p class="mb-0 font-weight-bold">Email:</p>
+                <p class="mb-0">
+                    <a href="#">info@adviesec.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+      </div> 
+      <!-- Botón de WhatsApp -->
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 3rem;" >
         <div id="whatsapp-button" class="whatsapp-button">
           <button class="whatsapp-button" onclick="openChat()">
               <img src="images/whatsapp.png" alt="WhatsApp" style="width: 40px; height: 40px;">
@@ -400,87 +546,13 @@
           function redirectToWhatsApp(number) {
             window.open(`https://wa.me/${number}`, '_blank');
             }
-        </script>
-        </div> 
-        <!-------------------------------------------CONTÁCTANOS----------------------->       
-        <section class="site-section bg-light" id="contact-section">
-          <div class="container">
+            </script>
+      </div>        
+    </div> 
 
-              <div class="row" style="margin-top: 5rem">
-                  <div class="mt-3 col-md-6 ">
-                      <img style="margin-top: 1rem;" width="90%" height="auto" src="./images/contactanos.jpg" alt=""/>
-                  </div>
-                  <div class="col-md-6 mb-5">
-                      <form action="#" class="p-5 bg-white">
-                          <p class="section-title" style="font-size: 23pt;text-align: center; margin-top: -4rem; line-height: 1em;"><br> DESEO QUE ME CONTACTE UN ASESOR</p>
-                          <div class="row form-group">
-                              <div class="col-md-6 mb-3 mb-md-0">
-                                  <label class="text-black" for="fname">Nombre:</label>
-                                  <input type="text" id="fname" class="form-control">
-                              </div>
-                              <div class="col-md-6">
-                                  <label class="text-black" for="lname">Tel&eacute;fono:</label>
-                                  <input type="text" id="telefono" class="form-control">
-                              </div>
-                          </div>
-
-                          <div class="row form-group">
-
-                              <div class="col-md-12">
-                                  <label class="text-black" for="email">Email</label>
-                                  <input type="email" id="email" class="form-control">
-                              </div>
-                          </div>
-
-                          <div class="row form-group">
-
-                              <div class="col-md-12">
-                                  <label class="text-black" for="subject">Asunto:</label>
-                                  <input type="subject" id="subject" class="form-control">
-                              </div>
-                          </div>
-
-                          <div class="row form-group">
-                              <div class="col-md-12">
-                                  <label class="text-black" for="message">Mensaje:</label>
-                                  <textarea name="message" id="message" cols="30" rows="3" class="form-control"
-                                      placeholder="Escribe acerca del servicio que necesitas..."></textarea>
-                              </div>
-                          </div>
-                          <center>
-                              <div class="row form-group">
-                                  <div class="col-md-12">
-                                      <input id="sendMail" value="Enviar Mensaje"
-                                          class="btn btn-primary btn-md text-white">
-                                  </div>
-                              </div>
-                          </center>
-                      </form>
-                  </div>
-                  
-              </div>
-              <div class="row">
-                  <div class="col-md-6">
-                      <p class="mb-0 font-weight-bold">Direcci&oacute;n:</p>
-                      <p class="mb-4">Av.De los Shyris N35-71 y Suecia <br> Edificio IQON Piso 3 Quito-Ecuador
-                  </div>
-                  <div class="col-md-3">
-                      <p class="mb-0 font-weight-bold">Tel&eacute;fono:</p>
-                      <p class="mb-4"><a href="#">(+593) 98 755 42 76</a></p>
-                  </div>
-                  <div class="col-md-3">
-                      <p class="mb-0 font-weight-bold">Email:</p>
-                      <p class="mb-0">
-                          <a href="#">info@ssorpheus.com</a>
-                      </p>
-                  </div>
-              </div>
-          </div>
-        </section>
-      </div>
-    </div>
-    <footer class="site-footer"></footer>
-  </div> <!-- .site-wrap -->
+        <footer class="site-footer"></footer>
+  </div> <!-- .site-wrap --> 
+  
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -493,10 +565,6 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
-
   <script src="js/main.js"></script>
-
-
 </body>
-
-</html>
+</html> 
