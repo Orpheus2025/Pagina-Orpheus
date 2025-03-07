@@ -183,16 +183,9 @@ h1, h2, h3, h4, h5,
   background: rgb(168, 160, 160);
 }
 /*----------------------- Estilos para Logos mision y vision------------ */
-.content-box {
-  max-width: 100%;
-   padding-left: 15px; /*Distancia entre el texto del lado izquierdo y la imagen */
-  padding-right: 15px;
-}
+/* Ajuste del contenido general */
 
-
-
-
-
+/* Estilos de los títulos de Misión y Visión */
 .title {
   font-size: 1.2rem;
   font-weight: bold;
@@ -201,9 +194,13 @@ h1, h2, h3, h4, h5,
   margin-bottom: 5px;
 }
 
+/* Ajuste del texto */
 .text {
-  text-align: justify;
+  text-align: justify; /* Justifica el texto */
   color: #333;
+  max-width: 60%; /* Controla el ancho para una mejor lectura */
+  margin: 0 auto; /* Coloca el texto centrado justificado */
+  display: block;
 }
 
 
