@@ -226,9 +226,9 @@ h1, h2, h3, h4, h5,
     }
       @media (min-width: 768px) {
         .site-section {
-          padding: 2.5em 0; } }
+          padding: 1.5em 0; } } /* Espacio entre titulo e imagen principal */
       .site-section.site-section-sm {
-        padding: 2em 0; }
+        padding: 1em 0; }
     
     .site-section-heading {
       padding-bottom: 16px;
