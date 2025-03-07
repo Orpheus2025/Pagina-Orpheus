@@ -4,10 +4,21 @@ AOS.init({
 	once: true
 });
 
-jQuery(document).ready(function ($) {
+$(document).ready(function () {
+	// Cargar header y footer dinámicamente
+    $("listaCab").load("header.html", function () {
+		// Asignar la función a los enlaces con onClick
+		document.querySelectorAll('header li a').forEach(link => {
+			link.addEventListener('click', function (e) {
+				const targetId = e.target.getAttribute('data-href').substring(1); // Eliminar el #
+				scrollToSection(e, targetId);
+			});
+			link.style.cursor = 'pointer'; // Cambiar el cursor
+		}
+		);
+    });
 
-	$("listaCab").load("header.html");
-	$("footer").load("footer.html");
+    $("footer").load("footer.html");
 
 	"use strict";
 
@@ -258,24 +269,6 @@ jQuery(document).ready(function ($) {
 	};
 	siteSticky();
 
-	// navigation
-	var OnePageNavigation = function () {
-		var navToggler = $('.site-menu-toggle');
-		$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function (e) {
-			e.preventDefault();
-
-			var hash = this.hash;
-
-			$('html, body').animate({
-				'scrollTop': $(hash).offset().top
-			}, 600, 'easeInOutCirc', function () {
-				window.location.hash = hash;
-			});
-
-		});
-	};
-	OnePageNavigation();
-
 	var siteScroll = function () {
 
 
@@ -296,3 +289,65 @@ jQuery(document).ready(function ($) {
 	siteScroll();
 
 });
+
+// navigation
+function OnePageNavigation () {
+    var navToggler = $(".site-menu-toggle");
+    var menu = $(".site-navigation"); // Contenedor del menú
+
+    // Manejar el clic en los enlaces de navegación
+    $("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function (e) {
+        e.preventDefault();
+
+        var targetId = this.hash;
+        var targetElement = $(targetId);
+
+        if (targetElement.length) {
+            var headerHeight = $("header").outerHeight(); // Altura del header
+
+            $("html, body").animate(
+                {
+                    scrollTop: targetElement.offset().top - headerHeight - 10 // Ajuste para que el header no tape
+                },
+                600,
+                "easeInOutCirc"
+            );
+
+            // Cerrar menú si estamos en móvil
+            if ($(window).width() < 992) {
+                menu.removeClass("active"); // Cierra el menú
+                navToggler.removeClass("open"); // Quita la animación del botón
+            }
+        }
+    });
+
+    // Manejar la apertura y cierre del menú en móviles
+    navToggler.on("click", function (e) {
+        e.preventDefault();
+        menu.toggleClass("active"); // Muestra u oculta el menú
+        $(this).toggleClass("open"); // Cambia el ícono de menú
+    });
+};
+
+
+function scrollToSection(event, targetId) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+    const targetElement = document.getElementById(targetId);
+    const header = document.querySelector('header');
+
+    if (targetElement && header) {
+        const headerHeight = header.offsetHeight; // Altura del header
+        const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY; // Posición absoluta
+
+        window.scrollTo({
+            top: targetOffset - headerHeight + 30, // Ajuste fino para que no quede cortado
+            behavior: 'smooth'
+        });
+    }
+
+    // Opcional: Cambiar el cursor del enlace clickeado
+    document.querySelectorAll('header li a').forEach(a => a.style.cursor = 'pointer');
+    event.target.style.cursor = 'default';
+}
+
