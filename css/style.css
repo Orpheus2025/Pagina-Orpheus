@@ -1690,10 +1690,13 @@ h1, h2, h3, h4, h5,
   display: none; }
 
 .section-sub-title {
-  font-size: 13px;
+  font-size: 20px;
+  font-weight: bold;
   color: #3a4971;
+  text-align: center;
   letter-spacing: .2em;
   text-transform: uppercase; }
+  
 
 .section-title {
   color: #3a4971;
