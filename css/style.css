@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5,
 
 /* Contenedor del navbar (logotipo + menú) */
 .site-navbar .container {
-  display: flex;
+  /* display: flex; Al colocar esta propiedad el menu se alinea a la izquierda, si se quita se queda a la derecha */
   width: 100%;
   justify-content: space-between; /* Espacio entre el logo y el menú */
   align-items: center;
