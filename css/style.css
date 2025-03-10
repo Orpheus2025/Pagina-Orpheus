@@ -1,3 +1,18 @@
+/* ESTILOS PARA TAMAÑO DE LETRAS EN VALORES CORPORATIVOS */
+@media screen and (max-width: 768px) { /* Para pantallas pequeñas */
+  .icono-valor {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .text-valores {
+      font-size: 22px;
+  }
+}
+
+
+
 /* Base */
 body {
   line-height: 1.7;
@@ -102,6 +117,8 @@ h1, h2, h3, h4, h5,
   cursor: pointer;
   transition: transform 0.3s, backgroud-color 0.3s;
   border: 1px solid rgb(54, 124, 63);
+  position: fixed; /* Mantiene el boton en una posicion fija */
+  z-index: 1000; /* Asegura que el boton este por encima de otros elementos */
 
 }
 .whatsapp-button:hover{
@@ -113,6 +130,7 @@ h1, h2, h3, h4, h5,
 .hidden{
   display: none;
 }
+
 
 
 
@@ -183,7 +201,7 @@ h1, h2, h3, h4, h5,
   background: rgb(168, 160, 160);
 }
 /*----------------------- Estilos para Logos mision y vision------------ */
-/* Ajuste del contenido general */
+
 
 /* Estilos de los títulos de Misión y Visión */
 .title {
@@ -196,31 +214,33 @@ h1, h2, h3, h4, h5,
 
 
 /* Estilos generales para los textos de Misión y Visión */
-
 .text {
   text-align: justify; /* Justifica el texto */
   color: #333;
   margin: 0 auto;
+  font-weight: 200;
+  font-size: 14px;
 }
 
-/* Estilos específicos para pantallas de escritorio */
-@media (min-width: 992px) {
-  .text {
-    max-width: 60%; /* Limita el ancho para una mejor lectura */
+
+
+
+/* --------------ESTILOS PARA SECCIÓN SEGURIDAD Y SALUD OCUPACIONES---------------- */
+
+/* Ajuste general para la imagen en el carrusel */
+.owl-carousel .img-fluid {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Añadir espacio entre el título y la imagen en pantallas móviles */
+@media (max-width: 768px) {
+  .owl-carousel .img-fluid {
+    margin-bottom: 20px;  /* Espacio entre la imagen y el Subtítulo */
   }
+  
 }
-
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 991px) {
-  .text {
-    max-width: 90%; /* Ocupa todo el ancho en dispositivos móviles */
-  }
-}
-
-
-/* ------------------------------------ */
-
-
 
 
 /* -------------------------------------------------   */
@@ -237,12 +257,12 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important; }
 
     .site-section {
-      padding: 2em 0;
+      padding: 1em 0;
       
     }
       @media (min-width: 768px) {
         .site-section {
-          padding: 1.5em 0; } } /* Espacio entre titulo e imagen principal */
+          padding: 1em 0; } } /* Espacio entre header y secccion */
       .site-section.site-section-sm {
         padding: 1em 0; }
     
@@ -250,7 +270,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 16px;
       margin-bottom: 0px;
       position: relative;
-      font-size: 2.5rem; }
+      font-size: 1.5rem; }
       @media (min-width: 768px) {
         .site-section-heading {
           font-size: 3rem; } }
@@ -337,7 +357,7 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 991.98px) {
   .display-1, .display-3 {
-    font-size: 3rem; } }
+    font-size: 4rem; } }
 
 .play-single-big {
   width: 90px;
@@ -402,130 +422,89 @@ h1, h2, h3, h4, h5,
     appearance: none;
     width: 100%; }
 
+
+/* Navbar */
 /* Navbar */
 .site-navbar {
-  margin-bottom: 0px;
-  z-index: 1999;
-  position: absolute;
+  z-index: 1000;
+  position: fixed;
   top: 0;
   width: 100%;
-  min-height: 10px;
- 
-  border-bottom: rgba(255, 255, 255, 0.7); }
-  .site-navbar .site-logo {
-    position: relative;
-    left: 0;
-    top: -5px; }
-  .site-navbar .site-navigation.border-bottom {
-    border-bottom: 1px solid #f3f3f4 !important; }
-  .site-navbar .site-navigation .site-menu {
-    margin-bottom: 0; }
-    .site-navbar .site-navigation .site-menu .active {
-      color: #3a4971;
-      display: inline-block;
-      padding: 5px 20px; }
-    .site-navbar .site-navigation .site-menu a {
-      text-decoration: none !important;
-      display: inline-block; }
-    .site-navbar .site-navigation .site-menu > li {
-      display: inline-block; }
-      .site-navbar .site-navigation .site-menu > li > a {
-        padding: 5px 20px;
-        color: #000;
-        display: inline-block;
-        text-decoration: none !important; }
-        .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #3a4971; }
-    .site-navbar .site-navigation .site-menu .has-children {
-      position: relative; }
-      .site-navbar .site-navigation .site-menu .has-children > a {
-        position: relative;
-        padding-right: 20px; }
-        .site-navbar .site-navigation .site-menu .has-children > a:before {
-          position: absolute;
-          content: "\e313";
-          font-size: 16px;
-          top: 50%;
-          right: 0;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          font-family: 'icomoon'; }
-      .site-navbar .site-navigation .site-menu .has-children .dropdown {
-        visibility: hidden;
-        opacity: 0;
-        top: 100%;
-        position: absolute;
-        text-align: left;
-        border-top: 2px solid #3a4971;
-        -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
-        border-left: 1px solid #edf0f5;
-        border-right: 1px solid #edf0f5;
-        border-bottom: 1px solid #edf0f5;
-        padding: 0px 0;
-        margin-top: 20px;
-        margin-left: 0px;
-        background: #fff;
-        -webkit-transition: 0.2s 0s;
-        -o-transition: 0.2s 0s;
-        transition: 0.2s 0s; }
-        .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
-          position: absolute; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
-            bottom: 100%;
-            left: 20%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
-            border-color: rgba(136, 183, 213, 0);
-            border-bottom-color: #fff;
-            border-width: 10px;
-            margin-left: -10px; }
-        .site-navbar .site-navigation .site-menu .has-children .dropdown a {
-          text-transform: none;
-          letter-spacing: normal;
-          -webkit-transition: 0s all;
-          -o-transition: 0s all;
-          transition: 0s all;
-          color: #343a40; }
-        .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
-          color: #3a4971 !important; }
-        .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          min-width: 200px; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
-            padding: 9px 20px;
-            display: block; }
-            .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
-              background: #f4f5f9;
-              color: #25262a; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
-            content: "\e315";
-            right: 20px; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > .dropdown, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > ul {
-            left: 100%;
-            top: 0; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
-            background: #f4f5f9;
-            color: #25262a; }
-      .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
-        color: #3a4971; }
-      .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
-        cursor: pointer; }
-        .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
-          -webkit-transition-delay: 0s;
-          -o-transition-delay: 0s;
-          transition-delay: 0s;
-          margin-top: 0px;
-          visibility: visible;
-          opacity: 1; }
+  height: 100px; /* Ajusta la altura según lo que necesites */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre el logo y el menú */
+  padding: 0 20px; /* Espaciado horizontal */
+  background-color: transparent; /* Mantener el fondo transparente */
+  transition: background-color 0.3s ease; /* Efecto de transición para el fondo */
+}
+
+/* Este bloque mantiene el comportamiento de transparencia */
+.site-navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.7); /* Cambia el fondo cuando se hace scroll */
+}
+
+/* Contenedor del navbar (logotipo + menú) */
+.site-navbar .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Espacio entre el logo y el menú */
+  align-items: center;
+}
+
+/* Estilo del logo */
+.site-navbar img {
+  max-height: 100px; /* Ajusta la altura del logo sin afectar el header */
+  margin: 0; /* Elimina márgenes que generen espacios innecesarios */
+}
+
+
+/* Estilo de los elementos del menú */
+.site-navbar .site-navigation .site-menu > li {
+  display: inline-block;
+}
+
+.site-navbar .site-navigation .site-menu {
+  display: flex;
+  align-items: center; /* Alinea los elementos del menú */
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0;
+}
+
+/* Estilo de los enlaces del menú */
+.site-navbar .site-navigation .site-menu > li > a {
+  padding: 15px 20px;
+  color: #000;
+  text-decoration: none; /* Elimina subrayado en los enlaces */
+}
+
+/* Efecto de hover en los enlaces del menú */
+.site-navbar .site-navigation .site-menu > li > a:hover {
+  color: #3a4971; /* Puedes cambiar el color al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----ESTILOS DEL MENU HAMBURGUESA PARA LA PARTE MOVIL----- */
 .site-mobile-menu {
@@ -699,7 +678,7 @@ h1, h2, h3, h4, h5,
     padding-top: 10px !important;
     padding-bottom: 10px !important; }
 
-/* Blocks */
+/* ESTILOS PARA LA PRIMERA SECCIÓN */
 .site-blocks-cover {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1700,7 +1679,7 @@ h1, h2, h3, h4, h5,
   font-weight: 900; }
   @media (max-width: 991.98px) {
     .section-title {
-      font-size: 30px; } }
+      font-size: 25px; } }
 
 .position-relative {
   position: relative; }
