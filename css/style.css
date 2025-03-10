@@ -11,21 +11,22 @@
       font-size: 22px;
   }
 }
-/* Tamaño de textos */
-@media (max-width: 991.98px) {
-  .text-black {
-      font-size: 15px;
-  }
-}
+
 
 /* -----------------ESTILOS PARA NUESTRA EMPRESA--------------- */
 /* Tamaño de textos */
 @media (max-width: 991.98px) {
   .text-our {
       font-size: 15px;
+      
   }
 }
+.imagen_logo{
+  border-radius: 10px;
+  height: 140%;
+  width: 100%;
 
+}
 
 
 /* Base */
@@ -224,7 +225,7 @@ h1, h2, h3, h4, h5,
   font-weight: bold;
   color: #246d27;
   text-align: center; /* Centra el texto */
-  margin-bottom: 5px;
+
 }
 
 
@@ -272,7 +273,7 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important; }
 
     .site-section {
-      padding: 1em 0;
+      padding: 0.5em 0;
       
     }
       @media (min-width: 768px) {
@@ -288,7 +289,7 @@ h1, h2, h3, h4, h5,
       font-size: 1.5rem; }
       @media (min-width: 768px) {
         .site-section-heading {
-          font-size: 3rem; } }
+          font-size: 1rem; } }
 
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
@@ -439,7 +440,7 @@ h1, h2, h3, h4, h5,
 
 
 /* Navbar */
-/* Navbar */
+/* -----------------ESTILOS PARA EL HEADER (MENÚ DE NAVEGACIÓN-------------) */
 .site-navbar {
   z-index: 1000;
   position: fixed;
@@ -484,6 +485,7 @@ h1, h2, h3, h4, h5,
   align-items: center; /* Alinea los elementos del menú */
   list-style: none; /* Elimina los puntos de las listas */
   margin: 0;
+  font-size: 15px; /* Tamaño de texto en los encabezados */
 }
 
 /* Estilo de los enlaces del menú */
@@ -1694,7 +1696,7 @@ h1, h2, h3, h4, h5,
   font-weight: 900; }
   @media (max-width: 991.98px) {
     .section-title {
-      font-size: 25px; } }
+      font-size: 22px; } }
 
 .position-relative {
   position: relative; }
