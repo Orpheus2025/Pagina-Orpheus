@@ -376,9 +376,21 @@ h1, h2, h3, h4, h5,
   .img-md-fluid {
     max-width: 100%; } }
 
+/*----ESTILO PARA ICONOS DE BENEFICIOS -----*/
 @media (max-width: 991.98px) {
   .display-1, .display-3 {
-    font-size: 4rem; } }
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 3rem; } }
+
+@media (max-width: 991.98px) {
+  .text-white  {
+    font-size: 22px;
+    
+} }
+    
+
+       
 
 .play-single-big {
   width: 90px;
