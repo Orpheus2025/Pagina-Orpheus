@@ -5,9 +5,24 @@
     height: 60px !important;
   }
 }
+/* Titulo de cada párrafo */
 @media (max-width: 991.98px) {
   .text-valores {
       font-size: 22px;
+  }
+}
+/* Tamaño de textos */
+@media (max-width: 991.98px) {
+  .text-black {
+      font-size: 15px;
+  }
+}
+
+/* -----------------ESTILOS PARA NUESTRA EMPRESA--------------- */
+/* Tamaño de textos */
+@media (max-width: 991.98px) {
+  .text-our {
+      font-size: 15px;
   }
 }
 
@@ -18,7 +33,7 @@ body {
   line-height: 1.7;
   color: gray;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
 
 ::-moz-selection {
   background: #000;
@@ -219,7 +234,7 @@ h1, h2, h3, h4, h5,
   color: #333;
   margin: 0 auto;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -454,7 +469,7 @@ h1, h2, h3, h4, h5,
 
 /* Estilo del logo */
 .site-navbar img {
-  max-height: 100px; /* Ajusta la altura del logo sin afectar el header */
+  max-height: 110px; /* Ajusta la altura del logo sin afectar el header */
   margin: 0; /* Elimina márgenes que generen espacios innecesarios */
 }
 
